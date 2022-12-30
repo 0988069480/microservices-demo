@@ -1,0 +1,2 @@
+common-service.minimum = 2
+common-service.maximum = 200
