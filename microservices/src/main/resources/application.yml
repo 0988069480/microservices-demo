@@ -1,0 +1,21 @@
+server:
+  #Setting port
+  port: 8080
+  #Setting context path
+  servlet:
+    context-path: /spring-demo
+
+spring:
+  #for connecting DB
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_demo
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  config:
+    import: optional:configserver:http://localhost:8888
+
